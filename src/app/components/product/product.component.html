@@ -1,0 +1,15 @@
+  <h2>Товары</h2>
+<div class="product">
+  <div class="product__item" *ngFor="let product of products">
+    <img width="150px" [src]="product.image" [alt]="product.title">
+    <h3 class="product__title">{{ product.title }}</h3>
+    <p>Цена: {{ product.price }}</p>
+    <button (click)="product.details = !product.details">
+      {{ product.details ? 'Скрыть' : 'Показать' }} детали
+    </button>
+    <div *ngIf="product.details">
+      <p>{{ product.description }}</p>
+      <p>Рейтинг: {{ product.rating.rate }}</p>
+    </div>
+  </div>
+</div>

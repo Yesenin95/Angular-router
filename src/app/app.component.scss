@@ -1,0 +1,29 @@
+.title{
+  text-align: center;
+  font-size: 48px;
+  color: #57bf40;
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  &__ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+  }
+  &__ul-li{
+    color: #57bf40;
+    text-decoration: none;
+    font-size: 30px;
+  }
+
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  font-size: 20px;
+  padding-bottom: 30px;
+}
